@@ -1,0 +1,159 @@
+body {
+    font-family: "Vesper Libre", serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(252, 239, 220);
+
+}
+
+h1 {
+    font-size: 35px;
+
+}
+
+#barraNavegacion {
+    display: flex;
+}
+
+#barraNavegacion li {
+    padding: 20px 29px;
+    list-style-type: none;
+    font-weight: 900;
+    margin-left: 5px;
+
+}
+
+#barraNavegacion a {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    color: black;
+
+
+}
+
+.imagen-principal {
+    width: 99%;
+    height: 500px;
+    margin: 8px;
+    opacity: 0.9;
+}
+
+#categorias {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+#cat {
+    font-size: xx-small;
+}
+
+#categorias h2 {
+    text-decoration: underline;
+}
+
+
+#categorias img {
+    width: 400px;
+    border-radius: 20px;
+
+}
+
+#Destacados {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid rgb(252, 251, 251);
+    padding: 50px;
+}
+
+#Destacados div {
+    border: 1px solid #e2dada;
+    border-radius: 25px;
+
+}
+
+#Destacados div:hover {
+    transform: scale(1.2);
+}
+
+#Destacados img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+
+}
+
+#Destacados p {
+    font-size: 300;
+    text-align: center;
+}
+
+#Destacados h2 {
+    font-size: xx-large;
+    position: relative;
+    top: 100px;
+}
+
+#info-logos {
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-around;
+    background-color: rgb(236, 236, 235);
+    padding: 20px 0;
+}
+
+#info-logos img {
+    width: 150px;
+    position: relative;
+    left: 30%;
+
+}
+
+#info-logos h3 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+#info-logos p {
+    font-size: x-large;
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer h3{
+  font-weight: 900;
+  font-size: x-large;
+}
+
+
+#contactos div{
+    display: flex;
+
+}
+
+#contactos li{
+    list-style: none;
+    padding: 10px;
+}
+
+#catego li{
+   list-style: none;
+   
+}
+#catego a{
+    text-decoration: none;
+    color: black;
+}
