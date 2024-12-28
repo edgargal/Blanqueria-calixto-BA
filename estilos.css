@@ -6,7 +6,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(252, 239, 220);
+    border-bottom: 1px solid black ;
+ 
 
 }
 
@@ -37,6 +38,63 @@ h1 {
 
 }
 
+#logo-avatar img {
+    width: 22px;
+    position: relative;
+   top: 5px;
+}
+
+#carro-de-compras img {
+    width: 22px;
+     position: relative;
+   top: 5px;
+
+
+}#carrito {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#carrito.oculto {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #2b71b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666769;
+}
+#contador-carrito {
+    background-color: rgb(43, 11, 187);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    min-width: 20px;
+    text-align: center;
+}
+
+button#ver-carrito {
+    position: relative;
+}
 .imagen-principal {
     width: 99%;
     height: 500px;
@@ -78,8 +136,9 @@ h1 {
 
 }
 
-#Destacados div:hover {
+#Destacados div>img:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #Destacados img {
@@ -118,6 +177,7 @@ h1 {
 #info-logos h3 {
     font-size: xx-large;
     text-align: center;
+   
 }
 
 #info-logos p {
@@ -125,35 +185,120 @@ h1 {
     text-align: center;
 }
 
-footer img{
+footer img {
     width: 30px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-around;
 }
-footer h3{
-  font-weight: 900;
-  font-size: x-large;
+
+footer h3 {
+    font-weight: 900;
+    font-size: x-large;
 }
 
 
-#contactos div{
+#contactos div {
     display: flex;
 
 }
 
-#contactos li{
+#contactos li {
     list-style: none;
     padding: 10px;
 }
 
-#catego li{
-   list-style: none;
-   
+#catego li {
+    list-style: none;
+
 }
-#catego a{
+
+#catego a {
     text-decoration: none;
     color: black;
+}
+
+#agregar-al-carrito{
+    position: relative; 
+    left: 90px; 
+    cursor: pointer
+}
+
+/*------------------------------------------------------------------*/
+/*-----------estilos page ingreso---------------------------*/
+.body-registro{
+    background-image: url(./multimedia/imagenes/edredon-lisboa.webp); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#main-inicio{
+   border: 1px solid black;
+   border-radius: 20px;
+   display:inline-block ;
+  position:relative;
+ left: 40%;
+ margin: 50px 0;
+
+}
+
+#inicio-container{
+    padding: 50px;
+    margin: 50px 0;
+    
+}
+
+.btn-inicio{
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 75px;
+}
+
+input{
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+}
+h1{
+    position: relative;
+    left: 70px;
+}
+
+h3,p{
+    position: relative;
+    left: 25px;
+}
+
+/*--------------------------------productos------------------------*/
+
+
+.container-productos{
+display: flex;
+justify-content: space-around;
+padding: 30px 0;
+margin: 50px 0;
+
+}
+
+.container-productos>div>img{
+width: 300px;
+height: 300px;
+}
+
+.container-productos>div{
+    border: 1px solid #e2dada;
+    border-radius: 25px;
+}
+
+.container-productos>div>img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }

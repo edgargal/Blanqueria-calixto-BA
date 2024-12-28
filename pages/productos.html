@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Calixto blanqueria</h1>
+        <ul id="barraNavegacion">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="">Home & Deco</a></li>
+            <li><a href="">Cómo comprar</a></li>
+            <li><a href="#" id="logo-avatar"><img src="../multimedia/imagenes/avatar.png"
+                        alt="logo avatar ingreso usuario">Mi cuenta</a></li>
+                        <button id="ver-carrito"><img src="../multimedia/imagenes/carrito-de-compras.png" alt="imagen-carro-de-compras" style="height: 20px;"></button>
+                        <span id="contador-carrito">0</span>
+                  
+
+        </ul>
+    </header>
+    <main>
+
+        <section class="container-productos">
+            <div>
+                <img src="../multimedia/imagenes/cortina-de-ambiente.webp" alt="cortina-de-ambiente-en-una-sala">
+                <p>Cortina de ambiente</p>
+                <p>Precio: $30.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('Cortina de ambiente', 30000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/cortinadebaño.webp" alt="cortina-de-banio">
+                <p>Cortina de baño</p>
+                <p>Precio: $18.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('Cortina de baño', 18000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/edredon-lisboa.webp" alt="edredon-acolchado-lisboa">
+                <p>Acolchado lisboa</p>
+                <p>Precio: $70.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('Acolchado lisboa', 70000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/toallas-arcoiris.webp" alt="toallas-arcoiris-para-manos">
+                <p>Toallas arcoiris</p>
+                <p>Precio: $20000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('Toallas arcoiris', 20000)">agregar al
+                    carrito</button>
+            </div>
+        </section>
+        <section class="container-productos">
+            <div>
+                <img src="../multimedia/imagenes/acolchado-disney-lightyear queen.webp" alt="acolchado-disney-lightyear">
+                <p>Acolchado de Disney lightyear</p>
+                <p>Precio: $25.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('acolchado disney lightyear', 25000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/acolchado-disney-sony.webp" alt="acolchado">
+                <p>acolchado disney sony</p>
+                <p>Precio: $25.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('acolchado-disney-sony', 25000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/cortinas blackout.webp" alt="Cotinas">
+                <p>Cotinas-black out</p>
+                <p>Precio: $60.000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('cortinas blackout', 60000)">agregar al
+                    carrito</button>
+            </div>
+            <div>
+                <img src="../multimedia/imagenes/frazada con corderito- seleccion argentina.webp" alt="frazadas">
+                <p>Frazada con corderito Argentina</p>
+                <p>Precio: $90000</p>
+                <p>12 cuotas sin interes</p>
+                <button id="agregar-al-carrito" onclick="agregarAlCarrito('frazada argentina', 90000)">agregar al
+                    carrito</button>
+            </div>
+        </section>
+        
+
+        <div id="carrito" class="oculto">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="vaciar-carrito">Vaciar carrito</button>
+            <button id="pagar">Pagar</button>
+        </div>
+      
+
+    </main>
+
+    <footer>
+        <div>
+            <h3>Categorias</h3>
+            <lu id="catego">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Blanqueria</a></li>
+                <li><a href="">Home & Deco</a></li>
+                <li><a href="">Contacto mayorista</a></li>
+                <li><a href="">Como comprar?</a></li>
+            </lu>
+        </div>
+        <div>
+            <h3>contactanos</h3>
+            <lu id="contactos">
+                <div>
+                    <img src="../multimedia/imagenes/14-143562_gmail-logo-png-gmail-logo-black-and-white.png"
+                        alt="logo-gmail">
+                    <li>calixtoblanqueria@gmail.com</li>
+                </div>
+                <div>
+                    <img src="../multimedia/imagenes/whatsapp.png" alt="logo-whatsapp">
+                    <li>11-1111-1111</li>
+                </div>
+                <div>
+                    <img src="../multimedia/imagenes/instagram-black-logo-on-transparent-background-free-vector.jpg"
+                        alt="logo-instagram">
+                    <li>calixto_blanqueria</li>
+                </div>
+
+            </lu>
+        </div>
+
+    </footer>
+
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
